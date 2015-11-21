@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="fonts/fonts.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
  <script>
@@ -34,12 +35,15 @@
       </header>
       <section class="tools-panel">
         <div class="user-panel">
-          <span class="panel-title"><p>ჩემი ოთახი</p></span>
+          <span class="panel-title"><p>მომხმარებლის პანელი</p></span>
           <div class="calc-wrp">
-            <input class="input input-username" type="text" placeholder="შეიყვანეთ ნიკი">
-            <input class="input input-password" type="text" placeholder="შეიყვანეთ პაროლი">
-            <button type="submit" class="submit">შესვლა</button>
-            <button type="submit" class="registration">რეგისტრაცია</button>
+            <span class="balance">ბალანსზე: 0 ლარი</span>
+            <ul class="userpanel-list">
+              <li>ბალანსის შევსება</li>
+              <li>ჩემი ოთახი</li>
+              <li>პროფილის რედაქტირება</li>
+            </ul>
+            <button type="submit" class="registration">გამოსვლა</button>
           </div>
         </div>
         <div class="freight-panel">
@@ -85,19 +89,78 @@
       <section class="page-tabs">
           <span class="tabs-wrp">
             <ul class="tabs-list">
-              <li class="tab-link current" data-tab="tab-1">ჩვენი სერვისი</li>
-              <li class="tab-link" data-tab="tab-2">ხშირად დასმული შეკითხვები</li>
-              <li class="tab-link" data-tab="tab-3">კომპანიის შესახებ</li>
-              <li class="tab-link" data-tab="tab-4">ტარიფები</li>
-              <li class="tab-link" data-tab="tab-2">კონტაქტი</li>
+              <li class="tab-link current" data-tab="tab-1">ჩემი მისამართი</li>
+              <li class="tab-link" data-tab="tab-2">მიღებული ამანათები</li>
+              <li class="tab-link" data-tab="tab-3">გამოგზავნილი ამანათები</li>
+              <li class="tab-link" data-tab="tab-4">ჩამოსული ამანათები</li>
             </ul>
             <span class="triangle"></span>
           </span>
           <div id="tab-1" class="tab-content current">
-            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+            <span class="info">ნივთის გამოსაგზავნად უმჯობესია გამოიყენოთ მისამართი ჩინურად!
+გამოწერამდე გთხოვთ მოკლედ გაეცნოთ დეკლარაციის პირობებს. <a href="">დააკლიკეთ აქ</a></span>
+
+<div class="box-address">
+  <span class="handler-address">მისამართი ჩინურად</span>
+  <span class="corner-address"></span>
+  <ul>
+    <li><b>FULLNAME:</b>beqa mshvildadze</li>
+    <li><b>ADDRESS:</b>广东省深圳市宝安区福永街道新和社区东八巷18栋 首层，翟涛 转 格鲁吉亚 TBS0004</li>
+    <li><b>CITY:</b>深圳市 罗湖区</li>
+    <li><b>PROVEINCE:</b>广东</li>
+    <li><b>DISTRICT:</b>Bao'an District</li>
+    <li><b>POSTAL CODE:</b>518002</li>
+    <li><b>PHONE:</b>13510575029</li>
+  </ul>
+</div>
+<div class="box-address" style="float:right;">
+  <span class="handler-address">მისამართი ინგლისურად</span>
+  <span class="corner-address"></span>
+  <ul>
+    <li><b>FULLNAME:</b>beqa mshvildadze</li>
+    <li><b>ADDRESS:</b>广东省深圳市宝安区福永街道新和社区东八巷18栋 首层，翟涛 转 格鲁吉亚 TBS0004</li>
+    <li><b>CITY:</b>深圳市 罗湖区</li>
+    <li><b>PROVEINCE:</b>广东</li>
+    <li><b>DISTRICT:</b>Bao'an District</li>
+    <li><b>POSTAL CODE:</b>518002</li>
+    <li><b>PHONE:</b>13510575029</li>
+  </ul>
+</div>
           </div>
           <div id="tab-2" class="tab-content">
-            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            <table class="parcels">
+ <thead>
+  <tr>
+     <th>თრექინგ კოდი</th>
+     <th>წონა</th>
+     <th>ფასი</th>
+     <th>გამოგზავნის დრო</th>
+     <th>რეისი</th>
+     <th>დეკლარაცია</th>
+     <th>გადახდა</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+    <td>21421412414</td>
+    <td>1.2</td>
+    <td>22</td>
+    <td>25/02/2015</td>
+    <td>TBS0001</td>
+    <td><span></span></td>
+    <td><span></span></td>
+  </tr>
+  <tr>
+    <td>21421412414</td>
+    <td>1.2</td>
+    <td>22</td>
+    <td>25/02/2015</td>
+    <td>TBS0001</td>
+    <td><span></span></td>
+    <td><span></span></td>
+  </tr>
+ </tbody>
+</table>
           </div>
           <div id="tab-3" class="tab-content">
             <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
